@@ -84,5 +84,22 @@
 </content>
     </item>
     
+    <item>
+      <title></title>
+      <link>/posts/movies-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/movies-2025/</guid>
+      <description>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
+&lt;p&gt;nosferatu 7/10&lt;/p&gt;
+&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
+&lt;p&gt;a real pain&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
+&lt;p&gt;nosferatu 7/10&lt;/p&gt;
+&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
+&lt;p&gt;a real pain&lt;/p&gt;
+</content>
+    </item>
+    
   </channel>
 </rss>
