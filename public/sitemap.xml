@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/vananotes/</loc>
+    <loc>/posts/movies/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/note-after-changes/</loc>
+    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/%23movies/</loc>
+    <lastmod>2025-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/vananotes/</loc>
     <lastmod>2025-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/first-note-on-my-blog/</loc>
@@ -34,8 +40,6 @@
   </url><url>
     <loc>/posts/welcome/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/movies-2025/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url>

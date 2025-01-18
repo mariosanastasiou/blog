@@ -3,9 +3,12 @@ title: "[[movies 2025]]"
 date: 2025-01-18
 draft: false
 tags:
-  - tag1
-  - tag2
+  - "#movies"
 ---
-winter sucks because:
-- its chilly
-- we get sick
+# watched
+
+nosferatu 7/10
+
+# watchlist
+
+a real pain
