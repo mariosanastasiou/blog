@@ -8,23 +8,6 @@
     <language>en</language>
     <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/movies/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[[movies 2025]]</title>
-      <link>/posts/movies/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/movies/</guid>
-      <description>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
-&lt;p&gt;nosferatu 7/10&lt;/p&gt;
-&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
-&lt;p&gt;a real pain&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
-&lt;p&gt;nosferatu 7/10&lt;/p&gt;
-&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
-&lt;p&gt;a real pain&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
       <title>lista supermarket</title>
       <link>/posts/vananotes/</link>
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
@@ -42,6 +25,23 @@
 &lt;li&gt;ntomates&lt;/li&gt;
 &lt;li&gt;patatakia&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>movies 2025</title>
+      <link>/posts/movies/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/movies/</guid>
+      <description>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
+&lt;p&gt;nosferatu 7/10&lt;/p&gt;
+&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
+&lt;p&gt;a real pain&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
+&lt;p&gt;nosferatu 7/10&lt;/p&gt;
+&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
+&lt;p&gt;a real pain&lt;/p&gt;
 </content>
     </item>
     
