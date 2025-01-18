@@ -24,5 +24,26 @@
 </content>
     </item>
     
+    <item>
+      <title>lista supermarket</title>
+      <link>/posts/vananotes/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/vananotes/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;patates&lt;/li&gt;
+&lt;li&gt;aggouria&lt;/li&gt;
+&lt;li&gt;ntomates&lt;/li&gt;
+&lt;li&gt;patatakia&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;ul&gt;
+&lt;li&gt;patates&lt;/li&gt;
+&lt;li&gt;aggouria&lt;/li&gt;
+&lt;li&gt;ntomates&lt;/li&gt;
+&lt;li&gt;patatakia&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
   </channel>
 </rss>
