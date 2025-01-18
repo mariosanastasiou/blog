@@ -5,7 +5,7 @@ draft: false
 tags:
   - supermarket
 ---
-- [ ] patates 
-- [ ] aggouria
-- [ ] ntomates
-- [ ] patatakia
+- patates 
+- aggouria
+- ntomates
+- patatakia
