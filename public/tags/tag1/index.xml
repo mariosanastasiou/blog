@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag1 on Terminal</title>
-    <link>//localhost:1313/tags/tag1/</link>
+    <link>/tags/tag1/</link>
     <description>Recent content in Tag1 on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>networkchuck made me do this</title>
-      <link>//localhost:1313/posts/first-note-on-my-blog/</link>
+      <link>/posts/first-note-on-my-blog/</link>
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/first-note-on-my-blog/</guid>
+      <guid>/posts/first-note-on-my-blog/</guid>
       <description>&lt;p&gt;networkchuck made me do this&lt;/p&gt;</description>
       <content>&lt;p&gt;networkchuck made me do this&lt;/p&gt;
 </content>
@@ -20,10 +20,10 @@
     
     <item>
       <title>welcome note</title>
-      <link>//localhost:1313/posts/note-after-changes/</link>
+      <link>/posts/note-after-changes/</link>
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/note-after-changes/</guid>
+      <guid>/posts/note-after-changes/</guid>
       <description>&lt;p&gt;please workkkkkkkkkkkkkk&lt;/p&gt;</description>
       <content>&lt;p&gt;please workkkkkkkkkkkkkk&lt;/p&gt;
 </content>
@@ -31,10 +31,10 @@
     
     <item>
       <title>test note</title>
-      <link>//localhost:1313/posts/note-vol2/</link>
+      <link>/posts/note-vol2/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/note-vol2/</guid>
+      <guid>/posts/note-vol2/</guid>
       <description>&lt;p&gt;this is just a test&lt;/p&gt;</description>
       <content>&lt;p&gt;this is just a test&lt;/p&gt;
 </content>
@@ -42,10 +42,10 @@
     
     <item>
       <title>welcome note</title>
-      <link>//localhost:1313/posts/welcome/</link>
+      <link>/posts/welcome/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/welcome/</guid>
+      <guid>/posts/welcome/</guid>
       <description>&lt;p&gt;This is your new &lt;em&gt;vault&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Make a note of something, [[create a link]], or try &lt;a href=&#34;https://help.obsidian.md/Plugins/Importer&#34;&gt;the Importer&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;When you&amp;rsquo;re ready, delete this note and make the vault your own.&lt;/p&gt;</description>
