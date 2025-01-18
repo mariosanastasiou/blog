@@ -3,7 +3,7 @@ title: "[[movies 2025]]"
 date: 2025-01-18
 draft: false
 tags:
-  - "#movies"
+  - movies
 ---
 # watched
 
