@@ -3,8 +3,9 @@ title: Configure & Setup Wireguard on
 date: 2025-01-18
 draft: false
 tags:
-  - tag1
-  - tag2
+  - vpn
+  - vps
+  - wireguard
 ---
 ## Step 1: Choose a VPS Provider and Set Up WireGuard Server
 

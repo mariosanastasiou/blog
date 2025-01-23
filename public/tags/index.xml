@@ -47,5 +47,35 @@
       <content></content>
     </item>
     
+    <item>
+      <title>Vpn</title>
+      <link>/tags/vpn/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vpn/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Vps</title>
+      <link>/tags/vps/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vps/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Wireguard</title>
+      <link>/tags/wireguard/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wireguard/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>
