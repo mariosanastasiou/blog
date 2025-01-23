@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.141.0">
+	<meta name="generator" content="Hugo 0.142.0">
   
     <title>Terminal</title>
   
@@ -181,6 +181,56 @@
     
       <article class="post on-list">
         <h2 class="post-title">
+          <a href="/posts/vpn-your-vps/">Configure &amp; Setup Wireguard on</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2025-01-18</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/tag1/">tag1</a>&nbsp;
+            
+            #<a href="/tags/tag2/">tag2</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h2 id="step-1-choose-a-vps-provider-and-set-up-wireguard-server">Step 1: Choose a VPS Provider and Set Up WireGuard Server</h2>
+<ol>
+<li>
+<p>Create a VPS instance: Log in to your VPS provider and create a new instance. Choose an appropriate server size and location. I chose Digital Ocean.</p>
+</li>
+<li>
+<p>Access your VPS: Use SSH to log in to your VPS from your local machine.</p>
+</li>
+</ol>
+<pre tabindex="0"><code>ssh user@your_vps_ip_address
+</code></pre><h2 id="step-2-install-wireguard">Step 2: Install WireGuard</h2>
+<p>The installation process varies slightly depending on your Linux distribution.</p>
+<h3 id="1-ubuntudebian">1. Ubuntu/Debian</h3>
+<pre tabindex="0"><code>sudo apt install wireguard
+</code></pre><h3 id="2-centosfedora">2. CentOS/Fedora:</h3>
+<pre tabindex="0"><code>sudo yum install epel-release
+sudo yum install wireguard-tools
+</code></pre><p>You may also need to install additional tools like &lsquo;qrencode&rsquo; for generating QR codes and &lsquo;resolvconf&rsquo; for DNS resolution.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/vpn-your-vps/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
           <a href="/posts/vananotes/">lista supermarket</a>
         </h2>
 
@@ -317,39 +367,6 @@
         
           <div>
             <a class="read-more button inline" href="/posts/first-note-on-my-blog/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="/posts/note-vol2/">test note</a>
-        </h2>
-
-        <div class="post-meta"><time class="post-date">2024-11-06</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/tag1/">tag1</a>&nbsp;
-            
-            #<a href="/tags/tag2/">tag2</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <p>this is just a test</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/note-vol2/">Read more</a>
           </div>
         
       </article>
