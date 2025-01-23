@@ -172,6 +172,55 @@
     
       <article class="post on-list">
         <h1 class="post-title">
+          <a href="/posts/vpn-your-vps/">Configure &amp; Setup Wireguard on</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2025-01-18</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/tag1/">tag1</a>&nbsp;
+            
+            #<a href="/tags/tag2/">tag2</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h2 id="step-1-choose-a-vps-provider-and-set-up-wireguard-server">Step 1: Choose a VPS Provider and Set Up WireGuard Server</h2>
+<ol>
+<li>
+<p>Create a VPS instance: Log in to your VPS provider and create a new instance. Choose an appropriate server size and location. I chose Digital Ocean.</p>
+</li>
+<li>
+<p>Access your VPS: Use SSH to log in to your VPS from your local machine.</p>
+</li>
+</ol>
+<pre tabindex="0"><code>ssh user@your_vps_ip_address
+</code></pre><h2 id="step-2-install-wireguard">Step 2: Install WireGuard</h2>
+<p>The installation process varies slightly depending on your Linux distribution.</p>
+<h3 id="1-ubuntudebian">1. Ubuntu/Debian</h3>
+<pre tabindex="0"><code>sudo apt install wireguard
+</code></pre><h3 id="2-centosfedora">2. CentOS/Fedora:</h3>
+<pre tabindex="0"><code>sudo yum install epel-release
+sudo yum install wireguard-tools
+</code></pre><p>You may also need to install additional tools like &lsquo;qrencode&rsquo; for generating QR codes and &lsquo;resolvconf&rsquo; for DNS resolution.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/vpn-your-vps/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
           <a href="/posts/note-after-changes/">maria&rsquo;s opinion on winter</a>
         </h1>
         <div class="post-meta"><time class="post-date">2025-01-18</time></div>
