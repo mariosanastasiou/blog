@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag2 on Terminal</title>
+    <link>/tags/tag2/</link>
+    <description>Recent content in Tag2 on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>maria&#39;s opinion on winter</title>
+      <link>/posts/posts/note-after-changes/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/note-after-changes/</guid>
+      <description>&lt;p&gt;winter sucks because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;its chilly&lt;/li&gt;
+&lt;li&gt;we get sick&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;p&gt;winter sucks because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;its chilly&lt;/li&gt;
+&lt;li&gt;we get sick&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>networkchuck made me do this</title>
+      <link>/posts/posts/first-note-on-my-blog/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/first-note-on-my-blog/</guid>
+      <description>&lt;p&gt;networkchuck made me do this&lt;/p&gt;</description>
+      <content>&lt;p&gt;networkchuck made me do this&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>test note</title>
+      <link>/posts/posts/note-vol2/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/note-vol2/</guid>
+      <description>&lt;p&gt;this is just a test&lt;/p&gt;</description>
+      <content>&lt;p&gt;this is just a test&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>welcome note</title>
+      <link>/posts/posts/welcome/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/welcome/</guid>
+      <description>&lt;p&gt;This is your new &lt;em&gt;vault&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Make a note of something, [[create a link]], or try &lt;a href=&#34;https://help.obsidian.md/Plugins/Importer&#34;&gt;the Importer&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re ready, delete this note and make the vault your own.&lt;/p&gt;</description>
+      <content>&lt;p&gt;This is your new &lt;em&gt;vault&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Make a note of something, [[create a link]], or try &lt;a href=&#34;https://help.obsidian.md/Plugins/Importer&#34;&gt;the Importer&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re ready, delete this note and make the vault your own.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

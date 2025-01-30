@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Configure &amp; Setup Wireguard on :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Step 1: Choose a VPS Provider and Set Up WireGuard Server Create a VPS instance: Log in to your VPS provider and create a new instance. Choose an appropriate server size and location. I chose Digital Ocean.
+Access your VPS: Use SSH to log in to your VPS from your local machine.
+ssh user@your_vps_ip_address Step 2: Install WireGuard The installation process varies slightly depending on your Linux distribution.
+1. Ubuntu/Debian sudo apt install wireguard 2. CentOS/Fedora: sudo yum install epel-release sudo yum install wireguard-tools You may also need to install additional tools like &lsquo;qrencode&rsquo; for generating QR codes and &lsquo;resolvconf&rsquo; for DNS resolution.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/posts/vpn-your-vps/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.4b367d85d0d0061435650561285afed36c46a7cf8dc6d7ed5642d98e589fa622.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Configure &amp; Setup Wireguard on">
+<meta property="og:description" content="Step 1: Choose a VPS Provider and Set Up WireGuard Server Create a VPS instance: Log in to your VPS provider and create a new instance. Choose an appropriate server size and location. I chose Digital Ocean.
+Access your VPS: Use SSH to log in to your VPS from your local machine.
+ssh user@your_vps_ip_address Step 2: Install WireGuard The installation process varies slightly depending on your Linux distribution.
+1. Ubuntu/Debian sudo apt install wireguard 2. CentOS/Fedora: sudo yum install epel-release sudo yum install wireguard-tools You may also need to install additional tools like &lsquo;qrencode&rsquo; for generating QR codes and &lsquo;resolvconf&rsquo; for DNS resolution.
+" />
+<meta property="og:url" content="/posts/posts/vpn-your-vps/" />
+<meta property="og:site_name" content="Terminal" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-01-18 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/posts/vpn-your-vps/">Configure &amp; Setup Wireguard on</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-01-18</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/vpn/">vpn</a>&nbsp;
+      
+      #<a href="/tags/vps/">vps</a>&nbsp;
+      
+      #<a href="/tags/wireguard/">wireguard</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="step-1-choose-a-vps-provider-and-set-up-wireguard-server">Step 1: Choose a VPS Provider and Set Up WireGuard Server<a href="#step-1-choose-a-vps-provider-and-set-up-wireguard-server" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ol>
+<li>
+<p>Create a VPS instance: Log in to your VPS provider and create a new instance. Choose an appropriate server size and location. I chose Digital Ocean.</p>
+</li>
+<li>
+<p>Access your VPS: Use SSH to log in to your VPS from your local machine.</p>
+</li>
+</ol>
+<pre tabindex="0"><code>ssh user@your_vps_ip_address
+</code></pre><h2 id="step-2-install-wireguard">Step 2: Install WireGuard<a href="#step-2-install-wireguard" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>The installation process varies slightly depending on your Linux distribution.</p>
+<h3 id="1-ubuntudebian">1. Ubuntu/Debian<a href="#1-ubuntudebian" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<pre tabindex="0"><code>sudo apt install wireguard
+</code></pre><h3 id="2-centosfedora">2. CentOS/Fedora:<a href="#2-centosfedora" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<pre tabindex="0"><code>sudo yum install epel-release
+sudo yum install wireguard-tools
+</code></pre><p>You may also need to install additional tools like &lsquo;qrencode&rsquo; for generating QR codes and &lsquo;resolvconf&rsquo; for DNS resolution.</p>
+<h2 id="step-3-configure-wireguard">Step 3: Configure WireGuard<a href="#step-3-configure-wireguard" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="1-generate-keys"><strong>1. Generate Keys</strong><a href="#1-generate-keys" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>WireGuard uses public and private keys for encryption. Generate these keys on your VPS.</p>
+<pre tabindex="0"><code>mkdir wireguard
+cd wireguard
+wg genkey | tee privatekey | wg pubkey &gt; publickey
+</code></pre><p>&lsquo;privatekey&rsquo;: Your private key.<br>
+&lsquo;publickey&rsquo;: Your public key.</p>
+<h3 id="2-create-a-configuration-file"><strong>2. Create a Configuration File</strong><a href="#2-create-a-configuration-file" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Create a configuration file for your WireGuard interface, typically located at &lsquo;/etc/wireguard/wg0.conf&rsquo;.</p>
+<pre tabindex="0"><code>sudo nano /etc/wireguard/wg0.conf
+</code></pre><pre tabindex="0"><code>[Interface]
+PrivateKey = your_private_key
+Address = 10.0.0.1/24  # IP range for VPN clients
+ListenPort = 51820  # Default WireGuard port
+[Peer]
+PublicKey = client_public_key
+AllowedIPs = 10.0.0.2/32  # Client IP within the VPN range
+</code></pre><pre tabindex="0"><code>sudo ufw allow 51820/udp
+net.ipv4.ip_forward=1
+</code></pre><pre tabindex="0"><code>sudo wg-quick up/down wg0
+</code></pre><p>sudo wg-quick up wg0</p>
+<h1 id="client">Client<a href="#client" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<pre tabindex="0"><code>root@dest:/etc/wireguard# tail *
+==&gt; privatekey &lt;==
+IHelZ7GZzxsQl3Ka8E+QEkBjK5LcxNh7quUxL5A0FU8=
+
+==&gt; publickey &lt;==
+ePgp65HjlweruQRJKXiZslPKw96GaBv4As2JttyykSo=
+
+==&gt; wg0.conf &lt;==
+[Interface]
+PrivateKey = IHelZ7GZzxsQl3Ka8E+QEkBjK5LcxNh7quUxL5A0FU8=
+Address = 10.0.0.2/24
+DNS = 8.8.8.8
+
+[Peer]
+PublicKey = DVg14SzLUj3vysNVOiitjqAdIrgi6dA/ZClFcwLufmQ=
+Endpoint = 188.166.34.118:51820
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25
+</code></pre><h1 id="server">Server<a href="#server" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<pre tabindex="0"><code>==&gt; privatekey &lt;==
+MJxYQHvvCrjHvJ0cKyw1D2QSFrR+7BbyDjmJlY97LF4=
+
+==&gt; publickey &lt;==
+DVg14SzLUj3vysNVOiitjqAdIrgi6dA/ZClFcwLufmQ=
+
+==&gt; wg0.conf &lt;==
+Address = 10.0.0.1/24
+ListenPort = 51820
+
+[Peer]
+PublicKey = ePgp65HjlweruQRJKXiZslPKw96GaBv4As2JttyykSo=
+AllowedIPs = 10.0.0.2/32
+</code></pre><p>Run on server</p>
+<pre tabindex="0"><code>iptables -A FORWARD -i wg0 -o eth0 -j ACCEPT
+iptables -A FORWARD -i eth0 -o wg0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+iptables-save &gt; /etc/iptables/rules.v4
+</code></pre>
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/posts/csv-parser--extract/" class="button inline prev">
+        Parse CSV
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/posts/vananotes/" class="button inline next">
+        lista supermarket
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
