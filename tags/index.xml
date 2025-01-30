@@ -6,57 +6,7 @@
     <description>Recent content in Tags on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Python</title>
-      <link>/tags/python/</link>
-      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/python/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Movies</title>
-      <link>/tags/movies/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/movies/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Supermarket</title>
-      <link>/tags/supermarket/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/supermarket/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Tag1</title>
-      <link>/tags/tag1/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tag1/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Tag2</title>
-      <link>/tags/tag2/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tag2/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vpn</title>
       <link>/tags/vpn/</link>
@@ -83,6 +33,26 @@
       <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>/tags/wireguard/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tag1</title>
+      <link>/tags/tag1/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tag1/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tag2</title>
+      <link>/tags/tag2/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tag2/</guid>
       <description></description>
       <content></content>
     </item>
