@@ -6,7 +6,18 @@
     <description>Recent content in Vpn on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>start your own blog</title>
+      <link>/posts/posts/start-your-own-blog/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/start-your-own-blog/</guid>
+      <description>&lt;h2 id=&#34;step-1-choose-a-host-for-your-website&#34;&gt;Step 1: Choose a Host for your website&lt;/h2&gt;</description>
+      <content>&lt;h2 id=&#34;step-1-choose-a-host-for-your-website&#34;&gt;Step 1: Choose a Host for your website&lt;/h2&gt;
+</content>
+    </item>
+    
     <item>
       <title>Configure &amp; Setup Wireguard on</title>
       <link>/posts/posts/vpn-your-vps/</link>
