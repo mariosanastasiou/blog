@@ -6,18 +6,7 @@
     <description>Recent content in Posts on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Parse CSV</title>
-      <link>/posts/posts/csv-parser--extract/</link>
-      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/posts/csv-parser--extract/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-</content>
-    </item>
-    
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configure &amp; Setup Wireguard on</title>
       <link>/posts/posts/vpn-your-vps/</link>
@@ -121,85 +110,6 @@ iptables -A FORWARD -i eth0 -o wg0 -m state --state RELATED,ESTABLISHED -j ACCEP
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 iptables-save &amp;gt; /etc/iptables/rules.v4
 &lt;/code&gt;&lt;/pre&gt;</content>
-    </item>
-    
-    <item>
-      <title>lista supermarket</title>
-      <link>/posts/posts/vananotes/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/posts/vananotes/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;patates&lt;/li&gt;
-&lt;li&gt;aggouria&lt;/li&gt;
-&lt;li&gt;ntomates&lt;/li&gt;
-&lt;li&gt;patatakia&lt;/li&gt;
-&lt;/ul&gt;</description>
-      <content>&lt;ul&gt;
-&lt;li&gt;patates&lt;/li&gt;
-&lt;li&gt;aggouria&lt;/li&gt;
-&lt;li&gt;ntomates&lt;/li&gt;
-&lt;li&gt;patatakia&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>maria&#39;s opinion on winter</title>
-      <link>/posts/posts/note-after-changes/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/posts/note-after-changes/</guid>
-      <description>&lt;p&gt;winter sucks because:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;its chilly&lt;/li&gt;
-&lt;li&gt;we get sick&lt;/li&gt;
-&lt;/ul&gt;</description>
-      <content>&lt;p&gt;winter sucks because:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;its chilly&lt;/li&gt;
-&lt;li&gt;we get sick&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>movies 2025</title>
-      <link>/posts/posts/movies/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/posts/movies/</guid>
-      <description>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
-&lt;p&gt;nosferatu 7/10&lt;/p&gt;
-&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
-&lt;p&gt;a real pain&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
-&lt;p&gt;nosferatu 7/10&lt;/p&gt;
-&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
-&lt;p&gt;a real pain&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>networkchuck made me do this</title>
-      <link>/posts/posts/first-note-on-my-blog/</link>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/posts/first-note-on-my-blog/</guid>
-      <description>&lt;p&gt;networkchuck made me do this&lt;/p&gt;</description>
-      <content>&lt;p&gt;networkchuck made me do this&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>test note</title>
-      <link>/posts/posts/note-vol2/</link>
-      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/posts/note-vol2/</guid>
-      <description>&lt;p&gt;this is just a test&lt;/p&gt;</description>
-      <content>&lt;p&gt;this is just a test&lt;/p&gt;
-</content>
     </item>
     
     <item>
