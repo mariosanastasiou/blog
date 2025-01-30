@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal</title>
+    <link>/</link>
+    <description>Recent content on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parse CSV</title>
+      <link>/posts/posts/csv-parser--extract/</link>
+      <pubDate>Thu, 30 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/csv-parser--extract/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+      <content>&lt;!-- raw HTML omitted --&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Configure &amp; Setup Wireguard on</title>
+      <link>/posts/posts/vpn-your-vps/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/vpn-your-vps/</guid>
+      <description>&lt;h2 id=&#34;step-1-choose-a-vps-provider-and-set-up-wireguard-server&#34;&gt;Step 1: Choose a VPS Provider and Set Up WireGuard Server&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a VPS instance: Log in to your VPS provider and create a new instance. Choose an appropriate server size and location. I chose Digital Ocean.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access your VPS: Use SSH to log in to your VPS from your local machine.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh user@your_vps_ip_address
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;step-2-install-wireguard&#34;&gt;Step 2: Install WireGuard&lt;/h2&gt;
+&lt;p&gt;The installation process varies slightly depending on your Linux distribution.&lt;/p&gt;
+&lt;h3 id=&#34;1-ubuntudebian&#34;&gt;1. Ubuntu/Debian&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install wireguard
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2-centosfedora&#34;&gt;2. CentOS/Fedora:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo yum install epel-release
+sudo yum install wireguard-tools
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You may also need to install additional tools like &amp;lsquo;qrencode&amp;rsquo; for generating QR codes and &amp;lsquo;resolvconf&amp;rsquo; for DNS resolution.&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;step-1-choose-a-vps-provider-and-set-up-wireguard-server&#34;&gt;Step 1: Choose a VPS Provider and Set Up WireGuard Server&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a VPS instance: Log in to your VPS provider and create a new instance. Choose an appropriate server size and location. I chose Digital Ocean.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Access your VPS: Use SSH to log in to your VPS from your local machine.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh user@your_vps_ip_address
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;step-2-install-wireguard&#34;&gt;Step 2: Install WireGuard&lt;/h2&gt;
+&lt;p&gt;The installation process varies slightly depending on your Linux distribution.&lt;/p&gt;
+&lt;h3 id=&#34;1-ubuntudebian&#34;&gt;1. Ubuntu/Debian&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install wireguard
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;2-centosfedora&#34;&gt;2. CentOS/Fedora:&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo yum install epel-release
+sudo yum install wireguard-tools
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You may also need to install additional tools like &amp;lsquo;qrencode&amp;rsquo; for generating QR codes and &amp;lsquo;resolvconf&amp;rsquo; for DNS resolution.&lt;/p&gt;
+&lt;h2 id=&#34;step-3-configure-wireguard&#34;&gt;Step 3: Configure WireGuard&lt;/h2&gt;
+&lt;h3 id=&#34;1-generate-keys&#34;&gt;&lt;strong&gt;1. Generate Keys&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;WireGuard uses public and private keys for encryption. Generate these keys on your VPS.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mkdir wireguard
+cd wireguard
+wg genkey | tee privatekey | wg pubkey &amp;gt; publickey
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;lsquo;privatekey&amp;rsquo;: Your private key.&lt;br&gt;
+&amp;lsquo;publickey&amp;rsquo;: Your public key.&lt;/p&gt;
+&lt;h3 id=&#34;2-create-a-configuration-file&#34;&gt;&lt;strong&gt;2. Create a Configuration File&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Create a configuration file for your WireGuard interface, typically located at &amp;lsquo;/etc/wireguard/wg0.conf&amp;rsquo;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo nano /etc/wireguard/wg0.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Interface]
+PrivateKey = your_private_key
+Address = 10.0.0.1/24  # IP range for VPN clients
+ListenPort = 51820  # Default WireGuard port
+[Peer]
+PublicKey = client_public_key
+AllowedIPs = 10.0.0.2/32  # Client IP within the VPN range
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo ufw allow 51820/udp
+net.ipv4.ip_forward=1
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo wg-quick up/down wg0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;sudo wg-quick up wg0&lt;/p&gt;
+&lt;h1 id=&#34;client&#34;&gt;Client&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;root@dest:/etc/wireguard# tail *
+==&amp;gt; privatekey &amp;lt;==
+IHelZ7GZzxsQl3Ka8E+QEkBjK5LcxNh7quUxL5A0FU8=
+
+==&amp;gt; publickey &amp;lt;==
+ePgp65HjlweruQRJKXiZslPKw96GaBv4As2JttyykSo=
+
+==&amp;gt; wg0.conf &amp;lt;==
+[Interface]
+PrivateKey = IHelZ7GZzxsQl3Ka8E+QEkBjK5LcxNh7quUxL5A0FU8=
+Address = 10.0.0.2/24
+DNS = 8.8.8.8
+
+[Peer]
+PublicKey = DVg14SzLUj3vysNVOiitjqAdIrgi6dA/ZClFcwLufmQ=
+Endpoint = 188.166.34.118:51820
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;server&#34;&gt;Server&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;==&amp;gt; privatekey &amp;lt;==
+MJxYQHvvCrjHvJ0cKyw1D2QSFrR+7BbyDjmJlY97LF4=
+
+==&amp;gt; publickey &amp;lt;==
+DVg14SzLUj3vysNVOiitjqAdIrgi6dA/ZClFcwLufmQ=
+
+==&amp;gt; wg0.conf &amp;lt;==
+Address = 10.0.0.1/24
+ListenPort = 51820
+
+[Peer]
+PublicKey = ePgp65HjlweruQRJKXiZslPKw96GaBv4As2JttyykSo=
+AllowedIPs = 10.0.0.2/32
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Run on server&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;iptables -A FORWARD -i wg0 -o eth0 -j ACCEPT
+iptables -A FORWARD -i eth0 -o wg0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+iptables-save &amp;gt; /etc/iptables/rules.v4
+&lt;/code&gt;&lt;/pre&gt;</content>
+    </item>
+    
+    <item>
+      <title>lista supermarket</title>
+      <link>/posts/posts/vananotes/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/vananotes/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;patates&lt;/li&gt;
+&lt;li&gt;aggouria&lt;/li&gt;
+&lt;li&gt;ntomates&lt;/li&gt;
+&lt;li&gt;patatakia&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;ul&gt;
+&lt;li&gt;patates&lt;/li&gt;
+&lt;li&gt;aggouria&lt;/li&gt;
+&lt;li&gt;ntomates&lt;/li&gt;
+&lt;li&gt;patatakia&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>maria&#39;s opinion on winter</title>
+      <link>/posts/posts/note-after-changes/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/note-after-changes/</guid>
+      <description>&lt;p&gt;winter sucks because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;its chilly&lt;/li&gt;
+&lt;li&gt;we get sick&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;p&gt;winter sucks because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;its chilly&lt;/li&gt;
+&lt;li&gt;we get sick&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>movies 2025</title>
+      <link>/posts/posts/movies/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/movies/</guid>
+      <description>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
+&lt;p&gt;nosferatu 7/10&lt;/p&gt;
+&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
+&lt;p&gt;a real pain&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
+&lt;p&gt;nosferatu 7/10&lt;/p&gt;
+&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
+&lt;p&gt;a real pain&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>networkchuck made me do this</title>
+      <link>/posts/posts/first-note-on-my-blog/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/first-note-on-my-blog/</guid>
+      <description>&lt;p&gt;networkchuck made me do this&lt;/p&gt;</description>
+      <content>&lt;p&gt;networkchuck made me do this&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>test note</title>
+      <link>/posts/posts/note-vol2/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/note-vol2/</guid>
+      <description>&lt;p&gt;this is just a test&lt;/p&gt;</description>
+      <content>&lt;p&gt;this is just a test&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>welcome note</title>
+      <link>/posts/posts/welcome/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/welcome/</guid>
+      <description>&lt;p&gt;This is your new &lt;em&gt;vault&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Make a note of something, [[create a link]], or try &lt;a href=&#34;https://help.obsidian.md/Plugins/Importer&#34;&gt;the Importer&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re ready, delete this note and make the vault your own.&lt;/p&gt;</description>
+      <content>&lt;p&gt;This is your new &lt;em&gt;vault&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Make a note of something, [[create a link]], or try &lt;a href=&#34;https://help.obsidian.md/Plugins/Importer&#34;&gt;the Importer&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re ready, delete this note and make the vault your own.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

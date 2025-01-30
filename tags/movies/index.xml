@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Movies on Terminal</title>
+    <link>/tags/movies/</link>
+    <description>Recent content in Movies on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/movies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lista supermarket</title>
+      <link>/posts/posts/vananotes/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/vananotes/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;patates&lt;/li&gt;
+&lt;li&gt;aggouria&lt;/li&gt;
+&lt;li&gt;ntomates&lt;/li&gt;
+&lt;li&gt;patatakia&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;ul&gt;
+&lt;li&gt;patates&lt;/li&gt;
+&lt;li&gt;aggouria&lt;/li&gt;
+&lt;li&gt;ntomates&lt;/li&gt;
+&lt;li&gt;patatakia&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>movies 2025</title>
+      <link>/posts/posts/movies/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/posts/movies/</guid>
+      <description>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
+&lt;p&gt;nosferatu 7/10&lt;/p&gt;
+&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
+&lt;p&gt;a real pain&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;watched&#34;&gt;watched&lt;/h1&gt;
+&lt;p&gt;nosferatu 7/10&lt;/p&gt;
+&lt;h1 id=&#34;watchlist&#34;&gt;watchlist&lt;/h1&gt;
+&lt;p&gt;a real pain&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
